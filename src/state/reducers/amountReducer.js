@@ -1,4 +1,4 @@
-export default reducer = (state=0, action) => {
+const amntReducer = (state=0, action) => {
     if(action.type === 'deposit') {
         return state  + action.payload
     }
@@ -8,3 +8,5 @@ export default reducer = (state=0, action) => {
         return state;
     }
 }
+
+export default amntReducer;
